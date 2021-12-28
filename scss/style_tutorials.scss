@@ -1,0 +1,299 @@
+/*
+
+*{
+ outline: 1px solid red;
+}
+*/
+
+
+* {
+	margin: 0;
+}
+
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+    background: #212121;
+
+  }
+
+
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  } 
+
+  .jumbotron {
+
+    color: white;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background: url("Images/tutorial.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+  }
+    .btn {
+      width: auto;
+      background-color:#283B8A;
+      color: white;
+      font-size: 18px; 
+    }
+
+   /* screen size */
+    @media screen and (max-width: 600px) {
+    .logo {
+     height: 10px;
+    width: 10px;
+    }
+
+    #myNavbar {
+      background-color:  #283B8A;
+      color: white;
+    }
+
+
+    .navbar {
+  height: 40px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color:  #283B8A;
+    margin-top: 40px;
+    background-color: #283B8A; 
+
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  } 
+
+
+
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color:#283B8A;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: white;
+    height: 80px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color:white !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: white!important;
+    background-color: #283B8A !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #283B8A;
+  }
+
+ 
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+ 
+}
+.fa {
+  padding: 25px;
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+ background: #283B8A;
+  color: white;
+}
+
+.fa-google {
+  background: #283B8A;
+  color: white;
+}
+.fa-instagram {
+   background: #283B8A;
+  color: white;
+}
+.fa-envolope {
+ background: #283B8A;
+  color: white;
+}
+.img_serv {
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+
+/* career prer*/
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+.glyphicon {
+  font-size: 40px;
+}
+
+
+
+
+/*Content */
+ body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+
+  .container-fluid {
+    padding: 60px 50px;
+    color: white;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #3792cb;
+    font-size: 50px;
+  }
+  .logo {
+    color: green;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+ 
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #black !important;
+    color: white;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .logo {
+      font-size: 150px;
+    }
+
+    iframe {
+      width: 250px;
+      height: auto;
+    }
+  }
+
+
+
