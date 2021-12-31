@@ -396,9 +396,9 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="picture">
-              <span><img src="Images/javier.png" class="jess"></span><br>
-              <h5 class="name">Javier Lavalle </h5>
-              <p class="description">DMS CoOp Manager</p>
+              <span><img src="Images/ibra.png" class="jess"></span><br>
+              <h5 class="name">Ibrahim Sinan </h5>
+              <p class="description">WMAD CoOp Manager</p>
             </div>
           </div>
           <div class="col-sm-8">
@@ -408,7 +408,27 @@
               portal will help you understand the CICCC co-op process and provide information to start building
               your career resources ... the Canadian way! Click “Book Appointment" to meet with an advisor 1:1 and discuss this career topic in more detail. 
             </p>
-            <a href="https://calendly.com/coop-advisor-ciccc/student-appointments" target="_blank"><button class="btn marginBtn">Book Appointment</button></a>
+            <form method="post" action="ibra.php" class="formContact">
+            <div class="col-sm-12 ">
+              <div class="row">
+                <div class="col-sm-6 form-group ">
+                  <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
+                </div>
+                <div class="col-sm-12 ">
+                  <textarea class="form-control " id="comments" name="Message" placeholder="Message"
+                    rows="5"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right contactButton" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
           </div>
         </div>
       </div>
