@@ -92,11 +92,11 @@ if (isset($_POST['Email'])) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="main.html"><img src="Images/logowhite.jpg" class="logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="Images/logowhite.jpg" class="logo"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav navbar-right">
-        <li><a href="main.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="docs.html">Required Docs</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="faq.html">FAQ</a></li>
@@ -113,7 +113,7 @@ if (isset($_POST['Email'])) {
  <br>
     <div class="return" style="text-align: center;" style="color: black;">
         <h1>   Thank you for contacting us. We will be in touch with you very soon.</h1> 
-        <button class="btn"><a href="main.html">Back</button> 
+        <button class="btn"><a href="index.html">Back</button> 
     </div><footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
