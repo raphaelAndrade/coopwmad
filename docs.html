@@ -79,8 +79,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1>Required Docs</h1>
-            <p>You must submit three required documents in Classe365 to complete your course and receive your
-              diploma. Without these documents, you will not be able to graduate.</p>
+            <p>You must submit 3 required documents on Classe365 to complete your program and receive your diploma. Without these documents, you will not be able to graduate.</p>
           </div>
         </div>
       </div>
@@ -166,25 +165,25 @@
           </div>
         </div>
         <div class="col-md-8 ">
-          <h1 class="contactTitle">Contact Co-op Assistant</h1>
+          <h1 class="contactTitle">Contact Co-op Advisor</h1>
           <p class="contactTitle">Send a message below for more information regarding co-op requirements and documentation.</p>
-          <form method="post" action="contact-form-process.php" class="formContact">
+          <form class="formContact">
             <div class="col-sm-12 paddingNone">
               <div class="row">
                 <div class="col-sm-6 form-group paddingNone">
-                  <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
+                  <input class="form-control" id="name" name="Name" placeholder="Name" value="Name" type="text" required>
                 </div>
                 <div class="col-sm-6 form-group">
-                  <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
+                  <input class="form-control" id="email" name="Email" placeholder="Email" value="Email" type="email" required>
                 </div>
                 <div class="col-sm-12 paddingNone">
-                  <textarea class="form-control " id="comments" name="Message" placeholder="Message"
+                  <textarea class="form-control " id="comments" name="Message" value="Message" placeholder="Message"
                     rows="5"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12 form-group">
-                  <button class="btn btn-default pull-right contactButton" type="submit">Submit</button>
+                  <button class="btn btn-default pull-right contactButton" id="contactButton" value="submit"  type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -193,6 +192,24 @@
       </div>
     </div>
   </section>
+
+  <script>
+    $(document).ready(()=> {
+      $("#contactButton").on("click", (e)=> {
+        e.preventDefault();
+        var url = 'contact-form-process.php';
+
+        jQuery.ajax({
+            type: "POST",
+            url:  url,
+            data: $('form').serialize(),
+            success: function () {
+              alert('Recebemos seus dados');
+            }
+        });
+      })
+    })
+  </script>
 
   <section class="footer docsPage">
     <div class="container">
