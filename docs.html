@@ -13,6 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style_main.css">
+  
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -167,7 +168,7 @@
         <div class="col-md-8 ">
           <h1 class="contactTitle">Contact Co-op Advisor</h1>
           <p class="contactTitle">Send a message below for more information regarding co-op requirements and documentation.</p>
-          <form class="formContact" action="mailto:raphaelsantosdesigner@gmail.com">
+          <form class="formContact" id="form">
             <div class="col-sm-12 paddingNone">
               <div class="row">
                 <div class="col-sm-6 form-group paddingNone">
@@ -183,7 +184,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12 form-group">
-                  <button class="btn btn-default pull-right contactButton" id="contactButton" value="submit"  type="submit">Submit</button>
+                  <button class="btn btn-default pull-right contactButton" id="submit" value="submit"  type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -192,25 +193,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <script>
-    $(document).ready(()=> {
-      $("#contactButton").on("click", (e)=> {
-        e.preventDefault();
-        var url = 'contact-form-process.php';
-
-        jQuery.ajax({
-            type: "POST",
-            url:  url,
-            data: $('form').serialize(),
-            success: function () {
-              alert('Recebemos seus dados');
-            }
-        });
-      })
-    }) -->
-  </script>
-
   <section class="footer docsPage">
     <div class="container">
       <div class="row">
@@ -276,6 +258,7 @@
 </div>
   </section>
   <script src="main.js"></script>
+  <script src="email.js"></script>
 </body>
 
 </html>
